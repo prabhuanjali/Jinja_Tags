@@ -16,5 +16,9 @@ def if_elif_else(request):
     return render(request, 'if_elif_else.html', context = d)
 
 def nested_if_else(request):
-    d = d = {'a': 1000, 'b': 250, 'c': 190}
+    d = {'a': 1000, 'b': 250, 'c': 190}
     return render(request, 'nested_if_else.html', context = d)
+
+def for_loop(request):
+    d = {'name':'Anjali', 'age':22, 'hobbies': ['Dance', 'sing', 'Read']}
+    return render(request, 'for_loop.html', context = d)
